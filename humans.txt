@@ -1,8 +1,0 @@
-# humanstxt.org/
-# The humans responsible
-
-# TEAM
-
-  Adolfo Sanz de Diego -- Founder      -- @asanzdiego
-  Carlos Azaustre      -- Co-organiser -- @carlosazaustre
-  Jorge Arévalo        -- Co-organiser -- @jorgeas80
