@@ -33,6 +33,7 @@
 </head>
 
 <body id="inicio" data-spy="scroll" data-target=".navbar">
+  <a class="skip-link sr-only sr-only-focusable" href="#main-content">Saltar al contenido</a>
 
   <!-- Full Body Container -->
   <div id="container">
@@ -76,13 +77,6 @@
                     href="https://discord.gg/QRN2epZVDB">
                     <i class="fa-brands fa-discord"></i>
                     <span class="sr-only sr-only-focusable">Discord</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="meetup itl-tooltip" data-placement="bottom" title="meetup"
-                    href="https://www.meetup.com/Hackathon-Lovers/">
-                    <i class="fa-brands fa-meetup"></i>
-                    <span class="sr-only sr-only-focusable">Meetup</span>
                   </a>
                 </li>
                 <li>
@@ -148,7 +142,7 @@
 
 
       <!-- Start  Logo & Naviagtion  -->
-      <div class="navbar navbar-default navbar-top">
+      <nav class="navbar navbar-default navbar-top" role="navigation" aria-label="Menú principal">
         <div class="container">
           <div class="navbar-header">
             <!-- Stat Toggle Nav Link For Mobiles -->
@@ -189,16 +183,15 @@
                 <a href="#equipo">Equipo</a>
               </li>
               <li>
-                <a href="en.html">EN</a>
+                <a href="/en/">EN</a>
               </li>
             </ul>
             <!-- End Navigation List -->
           </div>
         </div>
-      </div>
-      <!-- End Header Logo & Naviagtion -->
-
+      </nav>
     </header>
+    <main id="main-content">
     <!-- End Header Section -->
 
 
@@ -210,9 +203,9 @@
 
         <!-- Indicators -->
         <ol class="carousel-indicators">
-          <li data-target="#main-slide" data-slide-to="0" class="active"></li>
-          <li data-target="#main-slide" data-slide-to="1"></li>
-          <li data-target="#main-slide" data-slide-to="2"></li>
+          <li data-target="#main-slide" data-slide-to="0" class="active" role="button" tabindex="0" aria-label="Ir a la diapositiva 1"></li>
+          <li data-target="#main-slide" data-slide-to="1" role="button" tabindex="0" aria-label="Ir a la diapositiva 2"></li>
+          <li data-target="#main-slide" data-slide-to="2" role="button" tabindex="0" aria-label="Ir a la diapositiva 3"></li>
         </ol>
         <!--/ Indicators end-->
 
@@ -385,9 +378,6 @@
 
           <a class="slider btn-system btn-large btn-wite" href="https://discord.gg/QRN2epZVDB">
             <i class="fa-brands fa-discord"></i> Únete a nuestro Discord</a>
-
-          <a class="slider btn-system btn-large btn-wite" href="http://www.meetup.com/Hackathon-Lovers/">
-            <i class="fa-brands fa-meetup"></i> Únete a nuestro Meetup</a>
 
         </div>
         <!-- End Section Content -->
@@ -1634,7 +1624,7 @@
               Contacta con nosotros para organizarlo</h3>
 
             <p>
-              <a class="slider btn-system btn-large btn-wite" href="mailto: info@hackathonlovers.com">
+              <a class="slider btn-system btn-large btn-wite" href="mailto:info@hackathonlovers.com">
                 <i class="fa-solid fa-envelope"></i> info@hackathonlovers.com</a>
             </p>
 
@@ -2483,6 +2473,7 @@
       <!-- End Team Member Section -->
 
 
+    </main>
       <!-- Start Footer -->
       <footer id="footer">
         <div class="container">
@@ -2630,7 +2621,7 @@
     <!-- End Full Body Container -->
 
     <!-- Go To Top Link -->
-    <a href="#" class="back-to-top">
+    <a href="#" class="back-to-top" aria-label="Volver arriba">
       <i class="fa-solid fa-angle-up"></i>
       <span class="sr-only sr-only-focusable">Arriba</span>
     </a>
