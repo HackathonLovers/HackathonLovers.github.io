@@ -983,6 +983,13 @@ body.enterprise-mode .mode-enterprise.flex-display {
   display: grid;
 }
 
+.scroll-indicator{
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  font-size: 30px;
+}
+
 /* --- Responsive --- */
 @media (max-width: 1024px) {
   .services-grid {
@@ -1146,4 +1153,36 @@ body.enterprise-mode .mode-enterprise.flex-display {
 ::selection {
   background: var(--red);
   color: var(--white);
+}
+
+/* --- Scroll indicator --- */
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: inherit;
+  animation: bounce 2s infinite;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 35px;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-indicator:hover {
+  opacity: 1;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
 }
